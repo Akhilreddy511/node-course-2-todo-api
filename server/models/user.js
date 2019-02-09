@@ -9,5 +9,15 @@ var User = mongoose.model('User',{
     }
 });
 
+// var saveFile = new User({
+//     email:'    akhilreddy@gmail.com   '
+// });
 
-module.exports={User};
+// saveFile.save().then((doc)=>{
+//     console.log(doc);
+// },(e)=>{
+//     console.log(e);
+// })
+
+
+module.exports=User;

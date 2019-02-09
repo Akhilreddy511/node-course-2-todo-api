@@ -1,4 +1,10 @@
+// var mongoose = require('mongoose');
+
+// mongoose.connect('mongodb://localhost:27017/TodoApp').then(()=>{
+//     console.log('connected to db');
+// });
 var mongoose = require('mongoose');
+
 
 var Todo = mongoose.model('Todo',{
     text:{
@@ -15,4 +21,14 @@ var Todo = mongoose.model('Todo',{
     }
 });
 
-module.exports = {Todo};
+// var saveFile = new Todo({
+//     text:'testing to save todo'
+// });
+
+// saveFile.save().then((doc)=>{
+//     console.log(doc);
+// },(e)=>{
+//     console.log(e);
+// })
+
+ module.exports = Todo;
